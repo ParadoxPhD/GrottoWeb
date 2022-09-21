@@ -149,24 +149,6 @@ login.onclick = async function()
 	}
 }
 
-document.body.onclick = function()
-{
-	if(inModal)
-	{
-		inModal = false;
-		contentModal.innerHTML = "";
-		modal.style.display = "none";
-	}
-}
-
-modal.onclick = function()
-{
-	preventDefault();
-    stopPropagation();
-    stopImmediatePropagation();
-    return false;
-}
-
 function print(text) { console.log(text); }
 
 async function getpage(url)
