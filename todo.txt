@@ -1,0 +1,48 @@
+1. Create "make post" button.
+2. Make that button bring up a modal with a text field.
+3. Make submit button in modal that sends text to js.
+4. Send that text data off to POST.
+5. Retrieve that data with GET.
+6. Place that data into post object on feed.
+ALL DONE^
+
+Need SQL statement to get all posts newer than a timestamp.
+ALL DONE^
+
+1. Create "Users" db.
+- id (of course)
+- displayName (nullable, not unique)
+- userName (unique)
+- password (encrypted w/bcryptjs)
+- nonce (temporary pin, nullable)
+- email (unique)
+- verify (bool)
+DONE^
+2. Setup email script for account creation.
+- should send nonces for verification/2fa
+- should send password reset links w/nonce
+3. Fix post display in modal.
+DONE^
+4. Add button to add timeline/feed in bottom area.
+4.5. Add modal to set up timeline/feed.
+4.6. Add function to add timeline/feed with settings.
+DONE^
+
+bcrypt.compare(password, hashedPassword, 
+	async function (err, isMatch) {
+
+	// Comparing the original password to
+	// encrypted password   
+	if (isMatch) {
+		console.log('Encrypted password is: ', password);
+		console.log('Decrypted password is: ', hashedPassword);
+	}
+
+	if (!isMatch) {
+	  
+		// If password doesn't match the following
+		// message will be sent
+		console.log(hashedPassword + ' is not encryption of ' 
+		+ password);
+	}
+})

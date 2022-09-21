@@ -1,0 +1,160 @@
+*
+{
+	background-color: bisque;
+	cursor: default;
+}
+
+body
+{
+	overflow-x: scroll;
+	display: flex;
+	height: 500px;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.timeline
+{
+	background-color: cornflowerblue;
+	border: 10px solid cornflowerblue;
+	min-width: 600px;
+	height: 500px;
+	float: left;
+	overflow-y: scroll;
+}
+
+.header
+{
+	text-align: center;
+	background-color: cornflowerblue;
+	display: inline-block;
+	left: 290px;
+	position: relative;
+}
+
+.settings
+{
+	position: relative;
+	float: right;
+	right: 20px;
+}
+
+.post
+{
+	background-color: white;
+	margin: 10px;
+	padding: 10px;
+	height: 100px;
+	position: relative;
+	overflow: hidden;
+}
+
+.post *
+{
+	background-color: white;
+}
+
+.img
+{
+	height: 100px;
+	width: fit-content;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.postname
+{
+	position: absolute;
+	width: fit-content;
+	display: inline-block;
+	
+}
+
+.postname *
+{
+	display: inline-block;	
+}
+
+.posttext
+{
+	top: 40px;
+	width: inherit;
+	position: absolute;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	left: 70px;
+}
+
+#modal
+{
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 29vw;
+	top: 20vh;
+	width: 40vw;
+	height: 54vh;
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+#modal-content
+{
+	background-color: #fefefe;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+}
+
+#modal-content > *
+{
+	background-color: white;
+}
+
+/* The Close Button */
+#close
+{
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	position: relative;
+    bottom: 3vh;
+}
+
+#close:hover,
+#close:focus
+{
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#start
+{
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+}
+
+#login
+{
+	position: fixed;
+	bottom: 30px;
+	right: 100px;
+}
+
+#feed
+{
+	background-color: cyan;
+	border-radius: 15px;
+	height: 30px;
+	width: 30px;
+	position: fixed;
+	bottom: 30px;
+	left: 30px;
+}
